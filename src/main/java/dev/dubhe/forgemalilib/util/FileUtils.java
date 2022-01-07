@@ -10,7 +10,7 @@ import com.google.common.collect.ImmutableSet;
 import net.minecraft.client.Minecraft;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.nbt.NbtIo;
-import dev.dubhe.forgemalilib.MaLiLib;
+import dev.dubhe.forgemalilib.ForgeMaliLib;
 
 public class FileUtils
 {

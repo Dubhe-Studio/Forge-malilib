@@ -11,7 +11,7 @@ import net.minecraft.network.protocol.game.ClientboundCustomPayloadPacket;
 import net.minecraft.network.protocol.game.ServerboundCustomPayloadPacket;
 import net.minecraft.resources.ResourceLocation;
 import com.google.common.base.Charsets;
-import dev.dubhe.forgemalilib.ForgeMaLiLib;
+import dev.dubhe.forgemalilib.ForgeMaliLib;
 import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 

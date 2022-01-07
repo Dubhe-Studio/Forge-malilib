@@ -7,7 +7,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
 import org.lwjgl.opengl.GL11;
 import org.lwjgl.opengl.GL20;
-import dev.dubhe.forgemalilib.ForgeMaLiLib;
+import dev.dubhe.forgemalilib.ForgeMaliLib;
 
 /**
  * This class has been directly taken from Schematica by Lunatrius & contributors

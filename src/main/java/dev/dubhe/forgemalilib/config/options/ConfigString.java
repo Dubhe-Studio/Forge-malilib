@@ -2,7 +2,7 @@ package dev.dubhe.forgemalilib.config.options;
 
 import com.google.gson.JsonElement;
 import com.google.gson.JsonPrimitive;
-import dev.dubhe.forgemalilib.MaLiLib;
+import dev.dubhe.forgemalilib.ForgeMaliLib;
 import dev.dubhe.forgemalilib.config.ConfigType;
 import dev.dubhe.forgemalilib.config.IConfigValue;
 

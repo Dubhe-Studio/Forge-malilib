@@ -6,7 +6,7 @@ import com.google.common.collect.ImmutableList;
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonPrimitive;
-import dev.dubhe.forgemalilib.MaLiLib;
+import dev.dubhe.forgemalilib.ForgeMaliLib;
 import dev.dubhe.forgemalilib.config.ConfigType;
 import dev.dubhe.forgemalilib.config.IConfigStringList;
 

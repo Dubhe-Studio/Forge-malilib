@@ -18,7 +18,7 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
-import dev.dubhe.forgemalilib.ForgeMaLiLib;
+import dev.dubhe.forgemalilib.ForgeMaliLib;
 
 public class JsonUtils
 {

@@ -11,7 +11,7 @@ import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 import javax.annotation.Nullable;
-import dev.dubhe.forgemalilib.ForgeMaLiLib;
+import dev.dubhe.forgemalilib.ForgeMaliLib;
 
 public class DataDump
 {
