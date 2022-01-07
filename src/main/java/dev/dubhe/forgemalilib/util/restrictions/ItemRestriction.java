@@ -5,7 +5,7 @@ import java.util.Set;
 import net.minecraft.core.Registry;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
-import dev.dubhe.forgemalilib.MaLiLib;
+import dev.dubhe.forgemalilib.ForgeMaliLib;
 import dev.dubhe.forgemalilib.util.StringUtils;
 
 public class ItemRestriction extends UsageRestriction<Item>
@@ -33,7 +33,7 @@ public class ItemRestriction extends UsageRestriction<Item>
             }
             else
             {
-                MaLiLib.logger.warn(StringUtils.translate("malilib.error.invalid_item_blacklist_entry", name));
+                ForgeMaliLib.logger.warn(StringUtils.translate("malilib.error.invalid_item_blacklist_entry", name));
             }
         }
     }
