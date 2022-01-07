@@ -8,7 +8,7 @@ import dev.dubhe.forgemalilib.event.InitializationHandler;
 @Mod("forgemalilib")
 public class ForgeMaliLib {
     public static final Logger logger = LogManager.getLogger(MaLiLibReference.MOD_ID);
-    public void onInitialize()
+    public ForgeMaliLib()
     {
         InitializationHandler.getInstance().registerInitializationHandler(new MaLiLibInitHandler());
     }
