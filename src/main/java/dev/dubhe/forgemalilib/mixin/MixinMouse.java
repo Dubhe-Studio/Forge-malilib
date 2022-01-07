@@ -15,14 +15,14 @@ import net.minecraft.client.MouseHandler;
 @Mixin(MouseHandler.class)
 public abstract class MixinMouse
 {
-    @Shadow @Final private Minecraft client;
-    @Shadow private double eventDeltaWheel;
+    @Shadow @Final private Minecraft minecraft;
+    @Shadow private double accumulatedScroll;
 
     @Inject(method = "onMove",
             at = @At(value = "FIELD", target = "Lnet/minecraft/client/MouseHandler;ignoreFirstMove:Z", ordinal = 0))
     private void hookOnMouseMove(long handle, double xpos, double ypos, CallbackInfo ci)
     {
-        Window window = this.client.getWindow();
+        Window window = this.minecraft.getWindow();
         int mouseX = (int) (((MouseHandler) (Object) this).xpos() * (double) window.getGuiScaledWidth() / (double) window.getScreenWidth());
         int mouseY = (int) (((MouseHandler) (Object) this).ypos() * (double) window.getGuiScaledHeight() / (double) window.getScreenHeight());
 
@@ -33,13 +33,13 @@ public abstract class MixinMouse
             at = @At(value = "FIELD", target = "Lnet/minecraft/client/Minecraft;screen:Lnet/minecraft/client/gui/screens/Screen;", ordinal = 0))
     private void hookOnMouseScroll(long handle, double xOffset, double yOffset, CallbackInfo ci)
     {
-        Window window = this.client.getWindow();
+        Window window = this.minecraft.getWindow();
         int mouseX = (int) (((MouseHandler) (Object) this).xpos() * (double) window.getGuiScaledWidth() / (double) window.getScreenWidth());
         int mouseY = (int) (((MouseHandler) (Object) this).ypos() * (double) window.getGuiScaledHeight() / (double) window.getScreenHeight());
 
         if (((InputEventHandler) InputEventHandler.getInputManager()).onMouseScroll(mouseX, mouseY, xOffset, yOffset))
         {
-            this.eventDeltaWheel = 0.0;
+            this.accumulatedScroll = 0.0;
             ci.cancel();
         }
     }
@@ -48,7 +48,7 @@ public abstract class MixinMouse
             at = @At(value = "FIELD", target = "Lnet/minecraft/client/Minecraft;ON_OSX:Z", ordinal = 0))
     private void hookOnMouseClick(long handle, final int button, final int action, int mods, CallbackInfo ci)
     {
-        Window window = this.client.getWindow();
+        Window window = this.minecraft.getWindow();
         int mouseX = (int) (((MouseHandler) (Object) this).xpos() * (double) window.getGuiScaledWidth() / (double) window.getScreenWidth());
         int mouseY = (int) (((MouseHandler) (Object) this).ypos() * (double) window.getGuiScaledHeight() / (double) window.getScreenHeight());
         final boolean keyState = action == GLFW.GLFW_PRESS;

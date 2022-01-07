@@ -16,15 +16,15 @@ public abstract class MixinKeyboard implements IF3KeyStateSetter
 {
     @Shadow
     @Final
-    private Minecraft client;
+    private Minecraft minecraft;
 
     @Shadow
-    private boolean switchF3State;
+    private boolean handledDebugKey;
 
     @Override
     public void setF3KeyState(boolean value)
     {
-        this.switchF3State = value;
+        this.handledDebugKey = value;
     }
 
     @Inject(method = "keyPress", cancellable = true,

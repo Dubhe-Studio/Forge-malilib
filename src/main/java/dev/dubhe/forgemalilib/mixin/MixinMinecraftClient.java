@@ -21,9 +21,9 @@ import dev.dubhe.forgemalilib.event.WorldLoadHandler;
 public abstract class MixinMinecraftClient
 {
     @Shadow
-    public ClientLevel world;
+    public ClientLevel level;
 
-    private ClientLevel worldBefore;
+    private ClientLevel levelBefore;
 
     @Inject(method = "<init>(Lnet/minecraft/client/main/GameConfig;)V", at = @At("RETURN"))
     private void onInitComplete(GameConfig args, CallbackInfo ci)
@@ -46,38 +46,38 @@ public abstract class MixinMinecraftClient
     }
 
     @Inject(method = "setLevel(Lnet/minecraft/client/multiplayer/ClientLevel;)V", at = @At("HEAD"))
-    private void onLoadWorldPre(@Nullable ClientLevel worldClientIn, CallbackInfo ci)
+    private void onLoadWorldPre(@Nullable ClientLevel levelClientIn, CallbackInfo ci)
     {
         // Only handle dimension changes/respawns here.
         // The initial join is handled in MixinClientPlayNetworkHandler onGameJoin 
-        if (this.world != null)
+        if (this.level != null)
         {
-            this.worldBefore = this.world;
-            ((WorldLoadHandler) WorldLoadHandler.getInstance()).onWorldLoadPre(this.world, worldClientIn, (Minecraft)(Object) this);
+            this.levelBefore = this.level;
+            ((WorldLoadHandler) WorldLoadHandler.getInstance()).onWorldLoadPre(this.level, levelClientIn, (Minecraft)(Object) this);
         }
     }
 
     @Inject(method = "setLevel(Lnet/minecraft/client/multiplayer/ClientLevel;)V", at = @At("RETURN"))
-    private void onLoadWorldPost(@Nullable ClientLevel worldClientIn, CallbackInfo ci)
+    private void onLoadWorldPost(@Nullable ClientLevel levelClientIn, CallbackInfo ci)
     {
-        if (this.worldBefore != null)
+        if (this.levelBefore != null)
         {
-            ((WorldLoadHandler) WorldLoadHandler.getInstance()).onWorldLoadPost(this.worldBefore, worldClientIn, (Minecraft)(Object) this);
-            this.worldBefore = null;
+            ((WorldLoadHandler) WorldLoadHandler.getInstance()).onWorldLoadPost(this.levelBefore, levelClientIn, (Minecraft)(Object) this);
+            this.levelBefore = null;
         }
     }
 
     @Inject(method = "clearLevel(Lnet/minecraft/client/gui/screens/Screen;)V", at = @At("HEAD"))
     private void onDisconnectPre(Screen screen, CallbackInfo ci)
     {
-        this.worldBefore = this.world;
-        ((WorldLoadHandler) WorldLoadHandler.getInstance()).onWorldLoadPre(this.worldBefore, null, (Minecraft)(Object) this);
+        this.levelBefore = this.level;
+        ((WorldLoadHandler) WorldLoadHandler.getInstance()).onWorldLoadPre(this.levelBefore, null, (Minecraft)(Object) this);
     }
 
     @Inject(method = "clearLevel(Lnet/minecraft/client/gui/screens/Screen;)V", at = @At("RETURN"))
     private void onDisconnectPost(Screen screen, CallbackInfo ci)
     {
-        ((WorldLoadHandler) WorldLoadHandler.getInstance()).onWorldLoadPost(this.worldBefore, null, (Minecraft)(Object) this);
-        this.worldBefore = null;
+        ((WorldLoadHandler) WorldLoadHandler.getInstance()).onWorldLoadPost(this.levelBefore, null, (Minecraft)(Object) this);
+        this.levelBefore = null;
     }
 }

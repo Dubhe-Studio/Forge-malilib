@@ -14,11 +14,11 @@ import net.minecraft.client.gui.Gui;
 @Mixin(Gui.class)
 public abstract class MixinInGameHud
 {
-    @Shadow @Final private Minecraft client;
+    @Shadow @Final private Minecraft minecraft;
 
     @Inject(method = "render", at = @At("RETURN"))
     private void onGameOverlayPost(PoseStack matrixStack, float partialTicks, CallbackInfo ci)
     {
-        ((RenderEventHandler) RenderEventHandler.getInstance()).onRenderGameOverlayPost(matrixStack, this.client, partialTicks);
+        ((RenderEventHandler) RenderEventHandler.getInstance()).onRenderGameOverlayPost(matrixStack, this.minecraft, partialTicks);
     }
 }

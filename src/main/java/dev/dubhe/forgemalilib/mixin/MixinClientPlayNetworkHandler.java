@@ -19,32 +19,32 @@ import dev.dubhe.forgemalilib.event.WorldLoadHandler;
 @Mixin(ClientPacketListener.class)
 public abstract class MixinClientPlayNetworkHandler
 {
-    @Shadow @Final private Minecraft client;
-    @Shadow private ClientLevel world;
+    @Shadow @Final private Minecraft minecraft;
+    @Shadow private ClientLevel level;
 
-    @Nullable private ClientLevel worldBefore;
+    @Nullable private ClientLevel levelBefore;
 
     @Inject(method = "handleLogin", at = @At("HEAD"))
     private void onPreJoinGameHead(ClientboundLoginPacket packet, CallbackInfo ci)
     {
-        // Need to grab the old world reference at the start of the method,
-        // because the next injection point is right after the world has been assigned,
-        // since we need the new world reference for the callback.
-        this.worldBefore = this.world;
+        // Need to grab the old level reference at the start of the method,
+        // because the next injection point is right after the level has been assigned,
+        // since we need the new level reference for the callback.
+        this.levelBefore = this.level;
     }
 
     @Inject(method = "handleLogin", at = @At(value = "INVOKE",
             target = "Lnet/minecraft/client/Minecraft;setLevel(Lnet/minecraft/client/multiplayer/ClientLevel;)V"))
     private void onPreGameJoin(ClientboundLoginPacket packet, CallbackInfo ci)
     {
-        ((WorldLoadHandler) WorldLoadHandler.getInstance()).onWorldLoadPre(this.worldBefore, this.world, this.client);
+        ((WorldLoadHandler) WorldLoadHandler.getInstance()).onWorldLoadPre(this.levelBefore, this.level, this.minecraft);
     }
 
     @Inject(method = "handleLogin", at = @At("RETURN"))
     private void onPostGameJoin(ClientboundLoginPacket packet, CallbackInfo ci)
     {
-        ((WorldLoadHandler) WorldLoadHandler.getInstance()).onWorldLoadPost(this.worldBefore, this.world, this.client);
-        this.worldBefore = null;
+        ((WorldLoadHandler) WorldLoadHandler.getInstance()).onWorldLoadPost(this.levelBefore, this.level, this.minecraft);
+        this.levelBefore = null;
     }
 
     @Inject(method = "handleCustomPayload", cancellable = true,

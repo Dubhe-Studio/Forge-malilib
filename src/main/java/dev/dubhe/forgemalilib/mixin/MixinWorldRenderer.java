@@ -19,7 +19,7 @@ import net.minecraft.client.renderer.LightTexture;
 @Mixin(LevelRenderer.class)
 public abstract class MixinWorldRenderer
 {
-    @Shadow @Final private Minecraft client;
+    @Shadow @Final private Minecraft minecraft;
 
     @Inject(method = "renderLevel",
             at = @At(value = "INVOKE", ordinal = 1,
@@ -33,7 +33,7 @@ public abstract class MixinWorldRenderer
             Matrix4f projMatrix,
             CallbackInfo ci)
     {
-        ((RenderEventHandler) RenderEventHandler.getInstance()).onRenderWorldLast(matrices, projMatrix, this.client);
+        ((RenderEventHandler) RenderEventHandler.getInstance()).onRenderWorldLast(matrices, projMatrix, this.minecraft);
     }
 
     @Inject(method = "renderLevel",
@@ -52,6 +52,6 @@ public abstract class MixinWorldRenderer
             Matrix4f projMatrix,
             CallbackInfo ci)
     {
-        ((RenderEventHandler) RenderEventHandler.getInstance()).onRenderWorldLast(matrices, projMatrix, this.client);
+        ((RenderEventHandler) RenderEventHandler.getInstance()).onRenderWorldLast(matrices, projMatrix, this.minecraft);
     }
 }
