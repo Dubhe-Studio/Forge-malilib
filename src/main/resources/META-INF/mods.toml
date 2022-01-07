@@ -3,9 +3,9 @@ loaderVersion="[39,)"
 license="GNU GPL 3.0"
 [[mods]]
 modId="forgemalilib"
-version="${file.jarVersion}"
+version="0.10.0"
 displayName="Forgemalilib"
-authors="Gugle"
+authors=["Gugle","masa"]
 description='''
 malilib is a library mod used by masa's LiteLoader mods. It contains some common code previously duplicated in most of the mods, such as multi-key capable keybinds, configuration GUIs etc.
 '''

@@ -8,12 +8,17 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.annotation.Nullable;
 import dev.dubhe.forgemalilib.MaLiLibConfigs;
+import net.minecraftforge.fml.ModList;
 
 public class StringUtils
 {
     public static String getModVersionString(String modId)
     {
-        return "?";
+        try{
+            return ModList.get().getModContainerById(modId).get().getModInfo().getVersion().getQualifier();
+        } catch (NullPointerException e) {
+            return "?";
+        }
     }
 
     /**
