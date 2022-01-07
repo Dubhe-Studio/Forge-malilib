@@ -33,7 +33,7 @@ public class BlockRestriction extends UsageRestriction<Block>
             }
             else
             {
-                ForgeMaliLib.logger.warn(StringUtils.translate("malilib.error.invalid_block_blacklist_entry", name));
+                ForgeMaliLib.logger.warn(StringUtils.translate("forgemalilib.error.invalid_block_blacklist_entry", name));
             }
         }
     }

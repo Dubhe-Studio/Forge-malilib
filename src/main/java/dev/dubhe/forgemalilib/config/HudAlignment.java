@@ -4,11 +4,11 @@ import dev.dubhe.forgemalilib.util.StringUtils;
 
 public enum HudAlignment implements IConfigOptionListEntry
 {
-    TOP_LEFT        ("top_left",        "malilib.label.alignment.top_left"),
-    TOP_RIGHT       ("top_right",       "malilib.label.alignment.top_right"),
-    BOTTOM_LEFT     ("bottom_left",     "malilib.label.alignment.bottom_left"),
-    BOTTOM_RIGHT    ("bottom_right",    "malilib.label.alignment.bottom_right"),
-    CENTER          ("center",          "malilib.label.alignment.center");
+    TOP_LEFT        ("top_left",        "forgemalilib.label.alignment.top_left"),
+    TOP_RIGHT       ("top_right",       "forgemalilib.label.alignment.top_right"),
+    BOTTOM_LEFT     ("bottom_left",     "forgemalilib.label.alignment.bottom_left"),
+    BOTTOM_RIGHT    ("bottom_right",    "forgemalilib.label.alignment.bottom_right"),
+    CENTER          ("center",          "forgemalilib.label.alignment.center");
 
     private final String configString;
     private final String unlocName;

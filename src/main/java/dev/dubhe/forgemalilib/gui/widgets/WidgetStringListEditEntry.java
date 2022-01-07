@@ -99,7 +99,7 @@ public class WidgetStringListEditEntry extends WidgetConfigOptionBase<String>
 
     protected ButtonGeneric createResetButton(int x, int y, GuiTextFieldGeneric textField)
     {
-        String labelReset = StringUtils.translate("malilib.gui.button.reset.caps");
+        String labelReset = StringUtils.translate("forgemalilib.gui.button.reset.caps");
         ButtonGeneric resetButton = new ButtonGeneric(x, y, -1, 20, labelReset);
         resetButton.setEnabled(textField.getValue().equals(this.defaultValue) == false);
 
@@ -281,10 +281,10 @@ public class WidgetStringListEditEntry extends WidgetConfigOptionBase<String>
 
     private enum ButtonType
     {
-        ADD         (MaLiLibIcons.PLUS,         "malilib.gui.button.hovertext.add"),
-        REMOVE      (MaLiLibIcons.MINUS,        "malilib.gui.button.hovertext.remove"),
-        MOVE_UP     (MaLiLibIcons.ARROW_UP,     "malilib.gui.button.hovertext.move_up"),
-        MOVE_DOWN   (MaLiLibIcons.ARROW_DOWN,   "malilib.gui.button.hovertext.move_down");
+        ADD         (MaLiLibIcons.PLUS,         "forgemalilib.gui.button.hovertext.add"),
+        REMOVE      (MaLiLibIcons.MINUS,        "forgemalilib.gui.button.hovertext.remove"),
+        MOVE_UP     (MaLiLibIcons.ARROW_UP,     "forgemalilib.gui.button.hovertext.move_up"),
+        MOVE_DOWN   (MaLiLibIcons.ARROW_DOWN,   "forgemalilib.gui.button.hovertext.move_down");
 
         private final MaLiLibIcons icon;
         private final String hoverTextkey;

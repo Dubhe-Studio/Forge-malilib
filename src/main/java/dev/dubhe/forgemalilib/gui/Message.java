@@ -63,10 +63,10 @@ public class Message
 
     public enum MessageType
     {
-        INFO        ("malilib.message.formatting_code.info"),
-        SUCCESS     ("malilib.message.formatting_code.success"),
-        WARNING     ("malilib.message.formatting_code.warning"),
-        ERROR       ("malilib.message.formatting_code.error");
+        INFO        ("forgemalilib.message.formatting_code.info"),
+        SUCCESS     ("forgemalilib.message.formatting_code.success"),
+        WARNING     ("forgemalilib.message.formatting_code.warning"),
+        ERROR       ("forgemalilib.message.formatting_code.error");
 
         private final String translationKey;
 

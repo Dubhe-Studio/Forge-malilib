@@ -24,13 +24,13 @@ public class GuiKeybindSettings extends GuiDialogBase
 {
     protected final IKeybind keybind;
     protected final String keybindName;
-    protected final ConfigOptionList cfgActivateOn  = new ConfigOptionList("malilib.gui.label.keybind_settings.activate_on", KeyAction.PRESS, "malilib.config.comment.keybind_settings.activate_on");
-    protected final ConfigOptionList cfgContext     = new ConfigOptionList("malilib.gui.label.keybind_settings.context", KeybindSettings.Context.INGAME, "malilib.config.comment.keybind_settings.context");
-    protected final ConfigBoolean cfgAllowEmpty     = new ConfigBoolean("malilib.gui.label.keybind_settings.allow_empty_keybind", false, "malilib.config.comment.keybind_settings.allow_empty_keybind");
-    protected final ConfigBoolean cfgAllowExtra     = new ConfigBoolean("malilib.gui.label.keybind_settings.allow_extra_keys", false, "malilib.config.comment.keybind_settings.allow_extra_keys");
-    protected final ConfigBoolean cfgOrderSensitive = new ConfigBoolean("malilib.gui.label.keybind_settings.order_sensitive", false, "malilib.config.comment.keybind_settings.order_sensitive");
-    protected final ConfigBoolean cfgExclusive      = new ConfigBoolean("malilib.gui.label.keybind_settings.exclusive", false, "malilib.config.comment.keybind_settings.exclusive");
-    protected final ConfigBoolean cfgCancel         = new ConfigBoolean("malilib.gui.label.keybind_settings.cancel_further", false, "malilib.config.comment.keybind_settings.cancel_further");
+    protected final ConfigOptionList cfgActivateOn  = new ConfigOptionList("forgemalilib.gui.label.keybind_settings.activate_on", KeyAction.PRESS, "forgemalilib.config.comment.keybind_settings.activate_on");
+    protected final ConfigOptionList cfgContext     = new ConfigOptionList("forgemalilib.gui.label.keybind_settings.context", KeybindSettings.Context.INGAME, "forgemalilib.config.comment.keybind_settings.context");
+    protected final ConfigBoolean cfgAllowEmpty     = new ConfigBoolean("forgemalilib.gui.label.keybind_settings.allow_empty_keybind", false, "forgemalilib.config.comment.keybind_settings.allow_empty_keybind");
+    protected final ConfigBoolean cfgAllowExtra     = new ConfigBoolean("forgemalilib.gui.label.keybind_settings.allow_extra_keys", false, "forgemalilib.config.comment.keybind_settings.allow_extra_keys");
+    protected final ConfigBoolean cfgOrderSensitive = new ConfigBoolean("forgemalilib.gui.label.keybind_settings.order_sensitive", false, "forgemalilib.config.comment.keybind_settings.order_sensitive");
+    protected final ConfigBoolean cfgExclusive      = new ConfigBoolean("forgemalilib.gui.label.keybind_settings.exclusive", false, "forgemalilib.config.comment.keybind_settings.exclusive");
+    protected final ConfigBoolean cfgCancel         = new ConfigBoolean("forgemalilib.gui.label.keybind_settings.cancel_further", false, "forgemalilib.config.comment.keybind_settings.cancel_further");
     protected final List<ConfigBase<?>> configList;
     @Nullable protected final IDialogHandler dialogHandler;
     protected int labelWidth;
@@ -55,7 +55,7 @@ public class GuiKeybindSettings extends GuiDialogBase
             this.setParent(parent);
         }
 
-        this.title = TXT_BOLD + StringUtils.translate("malilib.gui.title.keybind_settings.advanced", this.keybindName) + TXT_RST;
+        this.title = TXT_BOLD + StringUtils.translate("forgemalilib.gui.title.keybind_settings.advanced", this.keybindName) + TXT_RST;
         KeybindSettings settings = this.keybind.getSettings();
 
         this.cfgActivateOn.setOptionListValue(settings.getActivateOn());

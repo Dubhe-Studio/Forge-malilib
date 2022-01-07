@@ -61,9 +61,9 @@ public abstract class UsageRestriction<TYPE>
 
     public enum ListType implements IConfigOptionListEntry
     {
-        NONE        ("none",        "malilib.label.list_type.none"),
-        BLACKLIST   ("blacklist",   "malilib.label.list_type.blacklist"),
-        WHITELIST   ("whitelist",   "malilib.label.list_type.whitelist");
+        NONE        ("none",        "forgemalilib.label.list_type.none"),
+        BLACKLIST   ("blacklist",   "forgemalilib.label.list_type.blacklist"),
+        WHITELIST   ("whitelist",   "forgemalilib.label.list_type.whitelist");
 
         private final String configString;
         private final String translationKey;

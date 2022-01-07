@@ -22,7 +22,7 @@ import com.mojang.blaze3d.vertex.VertexFormat;
 
 public class GuiColorEditorHSV extends GuiDialogBase
 {
-    protected static final ShaderProgram SHADER_HUE = new ShaderProgram("malilib", null, "shaders/sv_selector.frag");
+    protected static final ShaderProgram SHADER_HUE = new ShaderProgram("forgemalilib", null, "shaders/sv_selector.frag");
 
     protected final IConfigInteger config;
     @Nullable protected final IDialogHandler dialogHandler;
@@ -74,7 +74,7 @@ public class GuiColorEditorHSV extends GuiDialogBase
             this.setParent(parent);
         }
 
-        this.title = StringUtils.translate("malilib.gui.title.color_editor");
+        this.title = StringUtils.translate("forgemalilib.gui.title.color_editor");
 
         this.setWidthAndHeight(300, 180);
         this.centerOnScreen();
@@ -121,7 +121,7 @@ public class GuiColorEditorHSV extends GuiDialogBase
         this.textFieldFullColor.setMaxLength(12);
         this.addTextField(this.textFieldFullColor, new TextFieldListener(null, this));
 
-        //String str = StringUtils.translate("malilib.gui.label.color_editor.current_color");
+        //String str = StringUtils.translate("forgemalilib.gui.label.color_editor.current_color");
         //this.addLabel(this.xHS, this.yHS + this.sizeHS + 10, 60, 12, 0xFFFFFF, str);
 
         this.setColor(this.config.getIntegerValue()); // Set the text field values

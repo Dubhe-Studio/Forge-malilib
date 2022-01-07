@@ -30,6 +30,6 @@ public class MaLiLibInputHandler implements IKeybindProvider
     public void addHotkeys(IKeybindManager manager)
     {
         List<? extends IHotkey> hotkeys = ImmutableList.of( MaLiLibConfigs.Generic.OPEN_GUI_CONFIGS );
-        manager.addHotkeysForCategory(MaLiLibReference.MOD_NAME, "malilib.hotkeys.category.generic_hotkeys", hotkeys);
+        manager.addHotkeysForCategory(MaLiLibReference.MOD_NAME, "forgemalilib.hotkeys.category.generic_hotkeys", hotkeys);
     }
 }

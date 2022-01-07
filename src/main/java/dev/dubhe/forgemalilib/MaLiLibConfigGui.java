@@ -16,7 +16,7 @@ public class MaLiLibConfigGui extends GuiConfigsBase
 
     public MaLiLibConfigGui()
     {
-        super(10, 50, MaLiLibReference.MOD_ID, null, "malilib.gui.title.configs");
+        super(10, 50, MaLiLibReference.MOD_ID, null, "forgemalilib.gui.title.configs");
     }
 
     @Override
@@ -103,8 +103,8 @@ public class MaLiLibConfigGui extends GuiConfigsBase
 
     public enum ConfigGuiTab
     {
-        GENERIC ("malilib.gui.title.generic"),
-        DEBUG   ("malilib.gui.title.debug");
+        GENERIC ("forgemalilib.gui.title.generic"),
+        DEBUG   ("forgemalilib.gui.title.debug");
 
         private final String translationKey;
 

@@ -4,9 +4,9 @@ import dev.dubhe.forgemalilib.config.IConfigOptionListEntry;
 
 public enum ActiveMode implements IConfigOptionListEntry
 {
-    NEVER       ("never",       "malilib.label.active_mode.never"),
-    WITH_KEY    ("with_key",    "malilib.label.active_mode.with_key"),
-    ALWAYS      ("always",      "malilib.label.active_mode.always");
+    NEVER       ("never",       "forgemalilib.label.active_mode.never"),
+    WITH_KEY    ("with_key",    "forgemalilib.label.active_mode.with_key"),
+    ALWAYS      ("always",      "forgemalilib.label.active_mode.always");
 
     private final String configString;
     private final String translationKey;

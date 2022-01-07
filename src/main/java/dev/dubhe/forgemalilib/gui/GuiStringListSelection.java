@@ -102,8 +102,8 @@ public class GuiStringListSelection extends GuiListBase<String, WidgetStringList
 
         public enum Type
         {
-            OK      ("malilib.gui.button.ok"),
-            CANCEL  ("malilib.gui.button.cancel");
+            OK      ("forgemalilib.gui.button.ok"),
+            CANCEL  ("forgemalilib.gui.button.cancel");
 
             private final String translationKey;
 

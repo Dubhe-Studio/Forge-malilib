@@ -177,8 +177,8 @@ public class GuiConfirmAction extends GuiDialogBase implements ICompletionListen
 
     protected enum ButtonType
     {
-        OK      ("malilib.gui.button.ok"),
-        CANCEL  ("malilib.gui.button.cancel");
+        OK      ("forgemalilib.gui.button.ok"),
+        CANCEL  ("forgemalilib.gui.button.cancel");
 
         private final String labelKey;
 

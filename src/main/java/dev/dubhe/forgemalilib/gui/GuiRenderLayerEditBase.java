@@ -65,8 +65,8 @@ public abstract class GuiRenderLayerEditBase extends GuiBase
 
         if (layerMode == LayerMode.LAYER_RANGE)
         {
-            String labelMin = StringUtils.translate("malilib.gui.label.render_layers.layer_min") + ":";
-            String labelMax = StringUtils.translate("malilib.gui.label.render_layers.layer_max") + ":";
+            String labelMin = StringUtils.translate("forgemalilib.gui.label.render_layers.layer_min") + ":";
+            String labelMax = StringUtils.translate("forgemalilib.gui.label.render_layers.layer_max") + ":";
             int w1 = this.getStringWidth(labelMin);
             int w2 = this.getStringWidth(labelMax);
 
@@ -77,7 +77,7 @@ public abstract class GuiRenderLayerEditBase extends GuiBase
         }
         else
         {
-            String label = StringUtils.translate("malilib.gui.label.render_layers.layer") + ":";
+            String label = StringUtils.translate("forgemalilib.gui.label.render_layers.layer") + ":";
             int w = this.getStringWidth(label);
             this.addLabel(x, y, w, 20, 0xFFFFFF, label);
 
@@ -171,9 +171,9 @@ public abstract class GuiRenderLayerEditBase extends GuiBase
 
         public enum Type
         {
-            MODE        ("malilib.gui.button.render_layers_gui.layers"),
-            AXIS        ("malilib.gui.button.render_layers_gui.axis"),
-            SET_HERE    ("malilib.gui.button.render_layers_gui.set_here");
+            MODE        ("forgemalilib.gui.button.render_layers_gui.layers"),
+            AXIS        ("forgemalilib.gui.button.render_layers_gui.axis"),
+            SET_HERE    ("forgemalilib.gui.button.render_layers_gui.set_here");
 
             private final String translationKey;
 

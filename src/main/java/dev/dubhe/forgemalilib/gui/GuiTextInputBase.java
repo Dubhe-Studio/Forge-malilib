@@ -175,9 +175,9 @@ public abstract class GuiTextInputBase extends GuiDialogBase
 
     protected enum ButtonType
     {
-        OK      ("malilib.gui.button.ok"),
-        CANCEL  ("malilib.gui.button.cancel"),
-        RESET   ("malilib.gui.button.reset");
+        OK      ("forgemalilib.gui.button.ok"),
+        CANCEL  ("forgemalilib.gui.button.cancel"),
+        RESET   ("forgemalilib.gui.button.reset");
 
         private final String labelKey;
 

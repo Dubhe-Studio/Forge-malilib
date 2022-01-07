@@ -45,7 +45,7 @@ public class ButtonOnOff extends ButtonGeneric
 
     public static String getDisplayStringForStatus(String translationKey, boolean isCurrentlyOn)
     {
-        String strStatus = isCurrentlyOn ? "malilib.gui.label_colored.on" : "malilib.gui.label_colored.off";
+        String strStatus = isCurrentlyOn ? "forgemalilib.gui.label_colored.on" : "forgemalilib.gui.label_colored.off";
         return StringUtils.translate(translationKey, StringUtils.translate(strStatus));
     }
 }

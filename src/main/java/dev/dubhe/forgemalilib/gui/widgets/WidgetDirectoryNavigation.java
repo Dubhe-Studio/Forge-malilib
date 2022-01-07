@@ -60,7 +60,7 @@ public class WidgetDirectoryNavigation extends WidgetSearchBar
             }
             else if (hoveredIcon == this.iconCreateDir)
             {
-                String title = "malilib.gui.title.create_directory";
+                String title = "forgemalilib.gui.title.create_directory";
                 DirectoryCreator creator = new DirectoryCreator(this.currentDir, this.navigator);
                 GuiTextInputFeedback gui = new GuiTextInputFeedback(256, title, "", GuiUtils.getCurrentScreen(), creator);
                 GuiBase.openGui(gui);
@@ -129,15 +129,15 @@ public class WidgetDirectoryNavigation extends WidgetSearchBar
 
             if (hoveredIcon == this.iconRoot)
             {
-                RenderUtils.drawHoverText(mouseX, mouseY, Arrays.asList(StringUtils.translate("malilib.gui.button.hover.directory_widget.root")), matrixStack);
+                RenderUtils.drawHoverText(mouseX, mouseY, Arrays.asList(StringUtils.translate("forgemalilib.gui.button.hover.directory_widget.root")), matrixStack);
             }
             else if (hoveredIcon == this.iconUp)
             {
-                RenderUtils.drawHoverText(mouseX, mouseY, Arrays.asList(StringUtils.translate("malilib.gui.button.hover.directory_widget.up")), matrixStack);
+                RenderUtils.drawHoverText(mouseX, mouseY, Arrays.asList(StringUtils.translate("forgemalilib.gui.button.hover.directory_widget.up")), matrixStack);
             }
             else if (hoveredIcon == this.iconCreateDir)
             {
-                RenderUtils.drawHoverText(mouseX, mouseY, Arrays.asList(StringUtils.translate("malilib.gui.button.hover.directory_widget.create_directory")), matrixStack);
+                RenderUtils.drawHoverText(mouseX, mouseY, Arrays.asList(StringUtils.translate("forgemalilib.gui.button.hover.directory_widget.create_directory")), matrixStack);
             }
 
             RenderUtils.disableDiffuseLighting();

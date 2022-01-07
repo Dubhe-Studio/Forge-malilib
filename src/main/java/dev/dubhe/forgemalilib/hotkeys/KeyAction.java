@@ -5,9 +5,9 @@ import dev.dubhe.forgemalilib.util.StringUtils;
 
 public enum KeyAction implements IConfigOptionListEntry
 {
-    PRESS   ("press",   "malilib.label.key_action.press"),
-    RELEASE ("release", "malilib.label.key_action.release"),
-    BOTH    ("both",    "malilib.label.key_action.both");
+    PRESS   ("press",   "forgemalilib.label.key_action.press"),
+    RELEASE ("release", "forgemalilib.label.key_action.release"),
+    BOTH    ("both",    "forgemalilib.label.key_action.both");
 
     private final String configString;
     private final String translationKey;

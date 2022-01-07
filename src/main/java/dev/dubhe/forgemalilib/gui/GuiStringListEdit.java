@@ -34,7 +34,7 @@ public class GuiStringListEdit extends GuiListBase<String, WidgetStringListEditE
         this.config = config;
         this.configGui = configGui;
         this.dialogHandler = dialogHandler;
-        this.title = StringUtils.translate("malilib.gui.title.string_list_edit", config.getName());
+        this.title = StringUtils.translate("forgemalilib.gui.title.string_list_edit", config.getName());
 
         // When we have a dialog handler, then we are inside the Liteloader config menu.
         // In there we don't want to use the normal "GUI replacement and render parent first" trick.

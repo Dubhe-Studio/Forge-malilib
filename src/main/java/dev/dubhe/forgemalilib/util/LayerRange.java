@@ -139,7 +139,7 @@ public class LayerRange
         if (printMessage)
         {
             String val = GuiBase.TXT_GREEN + mode.getDisplayName();
-            InfoUtils.printActionbarMessage("malilib.message.set_layer_mode_to", val);
+            InfoUtils.printActionbarMessage("forgemalilib.message.set_layer_mode_to", val);
         }
     }
 
@@ -149,7 +149,7 @@ public class LayerRange
 
         this.refresher.updateAll();
         String val = GuiBase.TXT_GREEN + axis.getName();
-        InfoUtils.printActionbarMessage("malilib.message.set_layer_axis_to", val);
+        InfoUtils.printActionbarMessage("forgemalilib.message.set_layer_axis_to", val);
     }
 
     public void setLayerSingle(int layer)
@@ -350,21 +350,21 @@ public class LayerRange
             {
                 this.setLayerSingle(this.layerSingle + amount);
                 String val = strTo + this.layerSingle;
-                InfoUtils.printActionbarMessage("malilib.message.set_layer_to", val);
+                InfoUtils.printActionbarMessage("forgemalilib.message.set_layer_to", val);
                 break;
             }
             case ALL_ABOVE:
             {
                 this.setLayerAbove(this.layerAbove + amount);
                 String val = strTo + this.layerAbove;
-                InfoUtils.printActionbarMessage("malilib.message.moved_min_layer_to", val);
+                InfoUtils.printActionbarMessage("forgemalilib.message.moved_min_layer_to", val);
                 break;
             }
             case ALL_BELOW:
             {
                 this.setLayerBelow(this.layerBelow + amount);
                 String val = strTo + this.layerBelow;
-                InfoUtils.printActionbarMessage("malilib.message.moved_max_layer_to", val);
+                InfoUtils.printActionbarMessage("forgemalilib.message.moved_max_layer_to", val);
                 break;
             }
             case LAYER_RANGE:
@@ -409,12 +409,12 @@ public class LayerRange
 
             if (moveMin && moveMax)
             {
-                InfoUtils.printActionbarMessage("malilib.message.moved_layer_range", String.valueOf(amount), axisName);
+                InfoUtils.printActionbarMessage("forgemalilib.message.moved_layer_range", String.valueOf(amount), axisName);
             }
             else
             {
-                String val1 = moveMin ? StringUtils.translate("malilib.message.layer_range.range_min") : StringUtils.translate("malilib.message.layer_range.range_max");
-                InfoUtils.printActionbarMessage("malilib.message.moved_layer_range_boundary", val1, String.valueOf(amount), axisName);
+                String val1 = moveMin ? StringUtils.translate("forgemalilib.message.layer_range.range_min") : StringUtils.translate("forgemalilib.message.layer_range.range_max");
+                InfoUtils.printActionbarMessage("forgemalilib.message.moved_layer_range_boundary", val1, String.valueOf(amount), axisName);
             }
         }
     }

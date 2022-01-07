@@ -4,9 +4,9 @@ import dev.dubhe.forgemalilib.config.IConfigOptionListEntry;
 
 public enum BlockSnap implements IConfigOptionListEntry
 {
-    NONE        ("none",    "malilib.gui.label.block_snap.none"),
-    CENTER      ("center",  "malilib.gui.label.block_snap.center"),
-    CORNER      ("corner",  "malilib.gui.label.block_snap.corner");
+    NONE        ("none",    "forgemalilib.gui.label.block_snap.none"),
+    CENTER      ("center",  "forgemalilib.gui.label.block_snap.center"),
+    CORNER      ("corner",  "forgemalilib.gui.label.block_snap.corner");
 
     private final String configString;
     private final String translationKey;

@@ -4,11 +4,11 @@ import dev.dubhe.forgemalilib.config.IConfigOptionListEntry;
 
 public enum LayerMode implements IConfigOptionListEntry
 {
-    ALL             ("all",             "malilib.gui.label.layer_mode.all"),
-    SINGLE_LAYER    ("single_layer",    "malilib.gui.label.layer_mode.single_layer"),
-    LAYER_RANGE     ("layer_range",     "malilib.gui.label.layer_mode.layer_range"),
-    ALL_BELOW       ("all_below",       "malilib.gui.label.layer_mode.all_below"),
-    ALL_ABOVE       ("all_above",       "malilib.gui.label.layer_mode.all_above");
+    ALL             ("all",             "forgemalilib.gui.label.layer_mode.all"),
+    SINGLE_LAYER    ("single_layer",    "forgemalilib.gui.label.layer_mode.single_layer"),
+    LAYER_RANGE     ("layer_range",     "forgemalilib.gui.label.layer_mode.layer_range"),
+    ALL_BELOW       ("all_below",       "forgemalilib.gui.label.layer_mode.all_below"),
+    ALL_ABOVE       ("all_above",       "forgemalilib.gui.label.layer_mode.all_above");
 
     private final String configString;
     private final String translationKey;

@@ -91,7 +91,7 @@ public class GuiUtils
 
         if (addButton)
         {
-            String hover = StringUtils.translate("malilib.gui.button.hover.plus_minus_tip");
+            String hover = StringUtils.translate("forgemalilib.gui.button.hover.plus_minus_tip");
             ButtonGeneric button = new ButtonGeneric(x, y, MaLiLibIcons.BTN_PLUSMINUS_16, hover);
             gui.addButton(button, new ButtonListenerCoordinateInput(type, modifier));
         }

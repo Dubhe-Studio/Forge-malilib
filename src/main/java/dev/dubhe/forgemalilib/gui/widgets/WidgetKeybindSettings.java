@@ -103,41 +103,41 @@ public class WidgetKeybindSettings extends WidgetBase
     {
         List<String> text = new ArrayList<>();
         String name, val;
-        String strYes = StringUtils.translate("malilib.gui.label.yes");
-        String strNo = StringUtils.translate("malilib.gui.label.no");
+        String strYes = StringUtils.translate("forgemalilib.gui.label.yes");
+        String strNo = StringUtils.translate("forgemalilib.gui.label.no");
 
-        text.add(GuiBase.TXT_WHITE + GuiBase.TXT_UNDERLINE + StringUtils.translate("malilib.gui.label.keybind_settings.title_advanced_keybind_settings"));
+        text.add(GuiBase.TXT_WHITE + GuiBase.TXT_UNDERLINE + StringUtils.translate("forgemalilib.gui.label.keybind_settings.title_advanced_keybind_settings"));
 
-        name = StringUtils.translate("malilib.gui.label.keybind_settings.activate_on");
+        name = StringUtils.translate("forgemalilib.gui.label.keybind_settings.activate_on");
         val = GuiBase.TXT_BLUE + this.settings.getActivateOn().name();
         text.add(String.format("%s: %s", name, val));
 
-        name = StringUtils.translate("malilib.gui.label.keybind_settings.allow_empty_keybind");
+        name = StringUtils.translate("forgemalilib.gui.label.keybind_settings.allow_empty_keybind");
         val = this.settings.getAllowEmpty() ? (GuiBase.TXT_GREEN + strYes) : (GuiBase.TXT_GOLD + strNo);
         text.add(String.format("%s: %s", name, val));
 
-        name = StringUtils.translate("malilib.gui.label.keybind_settings.allow_extra_keys");
+        name = StringUtils.translate("forgemalilib.gui.label.keybind_settings.allow_extra_keys");
         val = this.settings.getAllowExtraKeys() ? (GuiBase.TXT_GREEN + strYes) : (GuiBase.TXT_GOLD + strNo);
         text.add(String.format("%s: %s", name, val));
 
-        name = StringUtils.translate("malilib.gui.label.keybind_settings.order_sensitive");
+        name = StringUtils.translate("forgemalilib.gui.label.keybind_settings.order_sensitive");
         val = this.settings.isOrderSensitive() ? (GuiBase.TXT_GOLD + strYes) : (GuiBase.TXT_GREEN + strNo);
         text.add(String.format("%s: %s", name, val));
 
-        name = StringUtils.translate("malilib.gui.label.keybind_settings.cancel_further");
+        name = StringUtils.translate("forgemalilib.gui.label.keybind_settings.cancel_further");
         val = this.settings.shouldCancel() ? (GuiBase.TXT_GOLD + strYes) : (GuiBase.TXT_GREEN + strNo);
         text.add(String.format("%s: %s", name, val));
 
-        name = StringUtils.translate("malilib.gui.label.keybind_settings.exclusive");
+        name = StringUtils.translate("forgemalilib.gui.label.keybind_settings.exclusive");
         val = this.settings.isExclusive() ? (GuiBase.TXT_GOLD + strYes) : (GuiBase.TXT_GREEN + strNo);
         text.add(String.format("%s: %s", name, val));
 
-        name = StringUtils.translate("malilib.gui.label.keybind_settings.context");
+        name = StringUtils.translate("forgemalilib.gui.label.keybind_settings.context");
         val = GuiBase.TXT_BLUE + this.settings.getContext().name();
         text.add(String.format("%s: %s", name, val));
 
         text.add("");
-        String[] parts = StringUtils.translate("malilib.gui.label.keybind_settings.tips").split("\\n");
+        String[] parts = StringUtils.translate("forgemalilib.gui.label.keybind_settings.tips").split("\\n");
 
         for (int i = 0; i < parts.length; ++i)
         {

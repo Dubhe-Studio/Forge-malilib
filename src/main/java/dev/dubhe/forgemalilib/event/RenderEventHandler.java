@@ -57,7 +57,7 @@ public class RenderEventHandler implements IRenderDispatcher
      */
     public void onRenderGameOverlayPost(PoseStack matrixStack, Minecraft mc, float partialTicks)
     {
-        mc.getProfiler().push("malilib_rendergameoverlaypost");
+        mc.getProfiler().push("forgemalilib_rendergameoverlaypost");
 
         if (this.overlayRenderers.isEmpty() == false)
         {
@@ -69,7 +69,7 @@ public class RenderEventHandler implements IRenderDispatcher
             }
         }
 
-        mc.getProfiler().push("malilib_ingamemessages");
+        mc.getProfiler().push("forgemalilib_ingamemessages");
         InfoUtils.renderInGameMessages(matrixStack);
         mc.getProfiler().pop();
 
@@ -97,7 +97,7 @@ public class RenderEventHandler implements IRenderDispatcher
     {
         if (this.worldLastRenderers.isEmpty() == false)
         {
-            mc.getProfiler().popPush("malilib_renderworldlast");
+            mc.getProfiler().popPush("forgemalilib_renderworldlast");
 
             RenderTarget fb = Minecraft.useShaderTransparency() ? mc.levelRenderer.getTranslucentTarget() : null;
 

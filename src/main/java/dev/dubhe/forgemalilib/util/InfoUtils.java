@@ -169,8 +169,8 @@ public class InfoUtils
     public static void printBooleanConfigToggleMessage(String prettyName, boolean newValue)
     {
         String pre = newValue ? GuiBase.TXT_GREEN : GuiBase.TXT_RED;
-        String status = StringUtils.translate("malilib.message.value." + (newValue ? "on" : "off"));
-        String message = StringUtils.translate("malilib.message.toggled", prettyName, pre + status + GuiBase.TXT_RST);
+        String status = StringUtils.translate("forgemalilib.message.value." + (newValue ? "on" : "off"));
+        String message = StringUtils.translate("forgemalilib.message.toggled", prettyName, pre + status + GuiBase.TXT_RST);
 
         printActionbarMessage(message);
     }

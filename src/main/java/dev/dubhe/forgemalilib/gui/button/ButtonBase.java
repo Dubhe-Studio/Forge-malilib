@@ -48,7 +48,7 @@ public abstract class ButtonBase extends WidgetBase
         }
 
         this.displayString = text;
-        this.hoverHelp = ImmutableList.of(StringUtils.translate("malilib.gui.button.hover.hold_shift_for_info"));
+        this.hoverHelp = ImmutableList.of(StringUtils.translate("forgemalilib.gui.button.hover.hold_shift_for_info"));
     }
 
     public ButtonBase setActionListener(@Nullable IButtonActionListener actionListener)

@@ -12,7 +12,7 @@ public class ConfigPanelAllHotkeys extends GuiModConfigs
 {
     public ConfigPanelAllHotkeys()
     {
-        super(MaLiLibReference.MOD_ID, createWrappers(), false, "malilib.gui.title.all_hotkeys");
+        super(MaLiLibReference.MOD_ID, createWrappers(), false, "forgemalilib.gui.title.all_hotkeys");
     }
 
     protected static List<ConfigOptionWrapper> createWrappers()

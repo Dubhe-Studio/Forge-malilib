@@ -175,9 +175,9 @@ public class KeybindSettings
 
     public enum Context implements IConfigOptionListEntry
     {
-        INGAME  ("ingame",  "malilib.label.key_context.ingame"),
-        GUI     ("gui",     "malilib.label.key_context.gui"),
-        ANY     ("any",     "malilib.label.key_context.any");
+        INGAME  ("ingame",  "forgemalilib.label.key_context.ingame"),
+        GUI     ("gui",     "forgemalilib.label.key_context.gui"),
+        ANY     ("any",     "forgemalilib.label.key_context.any");
 
         private final String configString;
         private final String translationKey;
