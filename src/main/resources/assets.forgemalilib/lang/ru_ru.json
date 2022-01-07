@@ -1,0 +1,113 @@
+{
+    "forgemalilib.config.comment.keybind_settings.activate_on": "Активируется ли действие при нажатии\nили отпускании сочетания клавиш",
+    "forgemalilib.config.comment.keybind_settings.allow_empty_keybind": "Если сочетание клавиш не задано, другие\nсочетания всегда будут считать его активным,\n если их срабатывание требует его активации",
+    "forgemalilib.config.comment.keybind_settings.allow_extra_keys": "Можно ли удерживать сторонние клавиши\nво время нажатия сочетания",
+    "forgemalilib.config.comment.keybind_settings.cancel_further": "Отключает обработку игрой последней клавиши сочетания,\nчтобы избежать двойного срабатывания клавиши\n(напимер, при открытии окна с поиском)",
+    "forgemalilib.config.comment.keybind_settings.context": "Срабатывает ли сочетание клавиш в\nигре или в графическом интерфейсе",
+    "forgemalilib.config.comment.keybind_settings.exclusive": "Другие сочетания клавиш будут блокироваться,\nпока все клавиши этого сочетания не будут отпущены",
+    "forgemalilib.config.comment.keybind_settings.order_sensitive": "Сочетание клавиш будет срабатывать только\nпри определённой последовательности нажатий",
+
+    "forgemalilib.error.failed_to_create_directory": "Не удалось создать папку '%s'",
+    "forgemalilib.error.file_or_directory_already_exists": "Файл или папка '%s' уже существует",
+    "forgemalilib.error.invalid_directory": "Неверное имя папки '%s'",
+    "forgemalilib.error.invalid_block_blacklist_entry": "Некорректный блок в чёрном или белом списке: '%s'",
+    "forgemalilib.error.invalid_item_blacklist_entry": "Некорректное имя предмета в чёрном или белом списке: '%s'",
+
+    "forgemalilib.gui.button.cancel": "Отменить",
+    "forgemalilib.gui.button.ok": "ОК",
+    "forgemalilib.gui.button.reset": "Сброс",
+    "forgemalilib.gui.button.reset.caps": "Сброс",
+
+    "forgemalilib.gui.button.render_layers_gui.axis": "Ось: %s",
+    "forgemalilib.gui.button.render_layers_gui.layers": "Слои: %s",
+    "forgemalilib.gui.button.render_layers_gui.set_here": "Установить на текущей высоте",
+
+    "forgemalilib.gui.button.hover.directory_widget.create_directory": "Создать новую папку",
+    "forgemalilib.gui.button.hover.directory_widget.root": "В корневую папку",
+    "forgemalilib.gui.button.hover.directory_widget.up": "На уровень вверх",
+    "forgemalilib.gui.button.hover.hold_shift_for_info": "§oУдерживайте Shift для получения дополнительной информации§r",
+    "forgemalilib.gui.button.hover.plus_minus_tip": "ЛКМ для увеличения\nПКМ для уменьшения\nShift и/или Alt для увеличения размера шага",
+
+    "forgemalilib.gui.label.block_snap.center": "Центр",
+    "forgemalilib.gui.label.block_snap.corner": "Угол",
+    "forgemalilib.gui.label.block_snap.none": "Нет",
+
+    "forgemalilib.gui.label_colored.off": "§cВыкл§r",
+    "forgemalilib.gui.label_colored.on": "§aВкл§r",
+
+    "forgemalilib.gui.label.color_editor.current_color": "Текущий цвет:",
+
+    "forgemalilib.gui.label.keybind_settings.activate_on": "Активация",
+    "forgemalilib.gui.label.keybind_settings.allow_empty_keybind": "Не задано = всегда активно",
+    "forgemalilib.gui.label.keybind_settings.allow_extra_keys": "Игнорировать другие клавиши",
+    "forgemalilib.gui.label.keybind_settings.cancel_further": "Прерывать повторное срабатывание",
+    "forgemalilib.gui.label.keybind_settings.context": "Условия активации",
+    "forgemalilib.gui.label.keybind_settings.exclusive": "Обособленность",
+    "forgemalilib.gui.label.keybind_settings.order_sensitive": "Строгий порядок нажатия",
+    "forgemalilib.gui.label.keybind_settings.tips": "- ЛКМ, чтобы настроить\n- ПКМ, чтобы сбросить по умолчанию",
+    "forgemalilib.gui.label.keybind_settings.title_advanced_keybind_settings": "Расширенные настройки привязки клавиш",
+
+    "forgemalilib.gui.label.layer_mode.all": "Все слои",
+    "forgemalilib.gui.label.layer_mode.all_above": "Все выше",
+    "forgemalilib.gui.label.layer_mode.all_below": "Все ниже",
+    "forgemalilib.gui.label.layer_mode.layer_range": "Диапазон слоёв",
+    "forgemalilib.gui.label.layer_mode.single_layer": "Один слой",
+
+    "forgemalilib.gui.label.no": "Нет",
+    "forgemalilib.gui.label.yes": "Да",
+
+    "forgemalilib.gui.label.render_layers.layer": "Слой",
+    "forgemalilib.gui.label.render_layers.layer_max": "Максимальный слой",
+    "forgemalilib.gui.label.render_layers.layer_min": "Минимальный слой",
+
+    "forgemalilib.gui.title.all_hotkeys": "Все зарегистрированные клавиши",
+    "forgemalilib.gui.title.color_editor": "Редактор цвета",
+    "forgemalilib.gui.title.configs": "Настройки Malilib",
+    "forgemalilib.gui.title.create_directory": "Создать новую папку",
+    "forgemalilib.gui.title.debug": "Отладка",
+    "forgemalilib.gui.title.generic": "Общие",
+    "forgemalilib.gui.title.keybind_settings.advanced": "Расширенные настройки клавиш для %s",
+    "forgemalilib.gui.title.string_list_edit": "Изменить список строк для '%s'",
+
+    "forgemalilib.label.active_mode.always": "Всегда",
+    "forgemalilib.label.active_mode.never": "Никогда",
+    "forgemalilib.label.active_mode.with_key": "С клавишей",
+
+    "forgemalilib.label.key_action.both": "Оба",
+    "forgemalilib.label.key_action.press": "При нажатии",
+    "forgemalilib.label.key_action.release": "При отпускании",
+
+    "forgemalilib.label.key_context.any": "Везде",
+    "forgemalilib.label.key_context.gui": "Только в меню",
+    "forgemalilib.label.key_context.ingame": "Только в игре",
+
+    "forgemalilib.label.list_type.blacklist": "Чёрный список",
+    "forgemalilib.label.list_type.none": "Нет",
+    "forgemalilib.label.list_type.whitelist": "Белый список",
+
+    "forgemalilib.label.alignment.top_left": "Сверху слева",
+    "forgemalilib.label.alignment.top_right": "Сверху справа",
+    "forgemalilib.label.alignment.bottom_left": "Снизу слева",
+    "forgemalilib.label.alignment.bottom_right": "Снизу справа",
+    "forgemalilib.label.alignment.center": "По центру",
+
+    "forgemalilib.message.directory_created": "Папка '%s' создана",
+    "forgemalilib.message.toggled": "Переключён %s %s",
+    "forgemalilib.message.value.off": "Выкл",
+    "forgemalilib.message.value.on": "Вкл",
+
+    "forgemalilib.message.formatting_code.error": "§c",
+    "forgemalilib.message.formatting_code.info": "§f",
+    "forgemalilib.message.formatting_code.success": "§a",
+    "forgemalilib.message.formatting_code.warning": "§6",
+
+    "forgemalilib.message.layer_range.range_max": "максимальный",
+    "forgemalilib.message.layer_range.range_min": "минимальный",
+    "forgemalilib.message.moved_layer_range": "Смещён весь диапазон слоёв по §a%s§r на §a%s§r оси",
+    "forgemalilib.message.moved_layer_range_boundary": "Смещён диапазон слоёв §a%s§r на §a%s§r по §a%s§r оси",
+    "forgemalilib.message.moved_max_layer_to": "Смещён максимальный слой на %s",
+    "forgemalilib.message.moved_min_layer_to": "Смещён минимальный слой на %s",
+    "forgemalilib.message.set_layer_axis_to": "Установлена ось слоя на %s",
+    "forgemalilib.message.set_layer_mode_to": "Установлен режим слоя на %s",
+    "forgemalilib.message.set_layer_to": "Установлен слой на %s"
+}
