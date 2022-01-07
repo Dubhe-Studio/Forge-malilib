@@ -10,7 +10,7 @@ import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import org.lwjgl.glfw.GLFW;
 import com.mojang.blaze3d.platform.InputConstants;
-import dev.dubhe.forgemalilib.MaLiLib;
+import dev.dubhe.forgemalilib.ForgeMaLiLib;
 import dev.dubhe.forgemalilib.MaLiLibConfigs;
 import dev.dubhe.forgemalilib.gui.Message;
 import dev.dubhe.forgemalilib.hotkeys.KeybindSettings.Context;

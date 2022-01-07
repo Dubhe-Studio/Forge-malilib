@@ -3,7 +3,7 @@ package dev.dubhe.forgemalilib.util;
 import java.lang.reflect.Field;
 import javax.annotation.Nullable;
 import org.lwjgl.glfw.GLFW;
-import dev.dubhe.forgemalilib.MaLiLib;
+import dev.dubhe.forgemalilib.ForgeMaLiLib;
 import it.unimi.dsi.fastutil.ints.Int2ObjectOpenHashMap;
 import it.unimi.dsi.fastutil.objects.Object2IntOpenHashMap;
 

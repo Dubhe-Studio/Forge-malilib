@@ -8,7 +8,7 @@ import dev.dubhe.forgemalilib.util.InfoUtils;
 import net.minecraft.client.Minecraft;
 import com.google.common.collect.ArrayListMultimap;
 import com.google.common.collect.Multimap;
-import dev.dubhe.forgemalilib.MaLiLib;
+import dev.dubhe.forgemalilib.ForgeMaLiLib;
 import dev.dubhe.forgemalilib.MaLiLibConfigs;
 import dev.dubhe.forgemalilib.gui.Message;
 import dev.dubhe.forgemalilib.hotkeys.IHotkey;
