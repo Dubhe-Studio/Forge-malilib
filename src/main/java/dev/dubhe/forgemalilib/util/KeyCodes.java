@@ -185,7 +185,7 @@ public class KeyCodes
             }
             catch (Exception e)
             {
-                MaLiLib.logger.error("Failed to initialize the key name lookup!", e);
+                ForgeMaliLib.logger.error("Failed to initialize the key name lookup!", e);
             }
         }
     }

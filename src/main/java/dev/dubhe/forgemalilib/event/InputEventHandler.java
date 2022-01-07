@@ -194,7 +194,7 @@ public class InputEventHandler implements IKeybindManager, IInputManager
         {
             String msg = String.format("Cancel requested by input handler '%s'", handler.getClass().getName());
             InfoUtils.showInGameMessage(Message.MessageType.INFO, msg);
-            MaLiLib.logger.info(msg);
+            ForgeMaliLib.logger.info(msg);
         }
     }
 
@@ -212,7 +212,7 @@ public class InputEventHandler implements IKeybindManager, IInputManager
             int time = (int) (System.currentTimeMillis() & 0xFFFF);
             int tick = this.mc.level != null ? (int) (this.mc.level.getGameTime() & 0xFFFF) : 0;
             String timeStr = String.format("time: %04X, tick: %04X", time, tick);
-            MaLiLib.logger.info("{} - xOffset: {}, yOffset: {}, discrete: {}, sensitivity: {}, amount: {}",
+            ForgeMaliLib.logger.info("{} - xOffset: {}, yOffset: {}, discrete: {}, sensitivity: {}, amount: {}",
                                 timeStr, xOffset, yOffset, discrete, sensitivity, amount);
         }
 

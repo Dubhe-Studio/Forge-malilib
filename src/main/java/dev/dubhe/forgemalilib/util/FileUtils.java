@@ -147,7 +147,7 @@ public class FileUtils
             }
             catch (Exception e)
             {
-                MaLiLib.logger.warn("Failed to read NBT data from file '{}'", file.getAbsolutePath());
+                ForgeMaliLib.logger.warn("Failed to read NBT data from file '{}'", file.getAbsolutePath());
             }
         }
 

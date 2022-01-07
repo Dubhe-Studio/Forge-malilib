@@ -28,7 +28,7 @@ public class ShaderProgram
         }
         catch (final Exception e)
         {
-            MaLiLib.logger.error("Could not initialize shader program!", e);
+            ForgeMaliLib.logger.error("Could not initialize shader program!", e);
             this.program = 0;
         }
     }
@@ -54,7 +54,7 @@ public class ShaderProgram
 
         if (GL20.glGetProgrami(this.program, GL20.GL_LINK_STATUS) == GL11.GL_FALSE)
         {
-            MaLiLib.logger.error("Could not link shader: {}", GL20.glGetProgramInfoLog(this.program, 1024));
+            ForgeMaliLib.logger.error("Could not link shader: {}", GL20.glGetProgramInfoLog(this.program, 1024));
             GL20.glDeleteProgram(this.program);
             this.program = 0;
             return;
@@ -64,7 +64,7 @@ public class ShaderProgram
 
         if (GL20.glGetProgrami(this.program, GL20.GL_VALIDATE_STATUS) == GL11.GL_FALSE)
         {
-            MaLiLib.logger.error("Could not validate shader: {}", GL20.glGetProgramInfoLog(this.program, 1024));
+            ForgeMaliLib.logger.error("Could not validate shader: {}", GL20.glGetProgramInfoLog(this.program, 1024));
             GL20.glDeleteProgram(this.program);
             this.program = 0;
         }
@@ -81,7 +81,7 @@ public class ShaderProgram
 
         if (handle == 0)
         {
-            MaLiLib.logger.error("Could not create shader of type {} for {}: {}", shaderType, filename, GL20.glGetProgramInfoLog(this.program, 1024));
+            ForgeMaliLib.logger.error("Could not create shader of type {} for {}: {}", shaderType, filename, GL20.glGetProgramInfoLog(this.program, 1024));
             return 0;
         }
 
@@ -98,7 +98,7 @@ public class ShaderProgram
 
         if (GL20.glGetShaderi(handle, GL20.GL_COMPILE_STATUS) == GL11.GL_FALSE)
         {
-            MaLiLib.logger.error("Could not compile shader {}: {}", filename, GL20.glGetShaderInfoLog(this.program, 1024));
+            ForgeMaliLib.logger.error("Could not compile shader {}: {}", filename, GL20.glGetShaderInfoLog(this.program, 1024));
             GL20.glDeleteShader(handle);
             return 0;
         }
@@ -128,7 +128,7 @@ public class ShaderProgram
         }
         catch (final Exception e)
         {
-            MaLiLib.logger.error("Could not load shader file!", e);
+            ForgeMaliLib.logger.error("Could not load shader file!", e);
         }
 
         return null;

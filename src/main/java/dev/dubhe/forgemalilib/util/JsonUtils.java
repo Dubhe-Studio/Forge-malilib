@@ -406,7 +406,7 @@ public class JsonUtils
             }
             catch (Exception e)
             {
-                MaLiLib.logger.error("Failed to parse the JSON file '{}'", fileName, e);
+                ForgeMaliLib.logger.error("Failed to parse the JSON file '{}'", fileName, e);
             }
         }
 
@@ -429,14 +429,14 @@ public class JsonUtils
 
             if (file.exists() && file.isFile() && file.delete() == false)
             {
-                MaLiLib.logger.warn("Failed to delete file '{}'", file.getAbsolutePath());
+                ForgeMaliLib.logger.warn("Failed to delete file '{}'", file.getAbsolutePath());
             }
 
             return fileTmp.renameTo(file);
         }
         catch (Exception e)
         {
-            MaLiLib.logger.warn("Failed to write JSON data to file '{}'", fileTmp.getAbsolutePath(), e);
+            ForgeMaliLib.logger.warn("Failed to write JSON data to file '{}'", fileTmp.getAbsolutePath(), e);
         }
 
         return false;

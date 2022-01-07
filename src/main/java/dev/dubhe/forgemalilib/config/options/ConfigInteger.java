@@ -136,7 +136,7 @@ public class ConfigInteger extends ConfigBase<ConfigInteger> implements IConfigI
         }
         catch (Exception e)
         {
-            MaLiLib.logger.warn("Failed to set config value for {} from the string '{}'", this.getName(), value, e);
+            ForgeMaliLib.logger.warn("Failed to set config value for {} from the string '{}'", this.getName(), value, e);
         }
     }
 
@@ -151,12 +151,12 @@ public class ConfigInteger extends ConfigBase<ConfigInteger> implements IConfigI
             }
             else
             {
-                MaLiLib.logger.warn("Failed to set config value for '{}' from the JSON element '{}'", this.getName(), element);
+                ForgeMaliLib.logger.warn("Failed to set config value for '{}' from the JSON element '{}'", this.getName(), element);
             }
         }
         catch (Exception e)
         {
-            MaLiLib.logger.warn("Failed to set config value for '{}' from the JSON element '{}'", this.getName(), element, e);
+            ForgeMaliLib.logger.warn("Failed to set config value for '{}' from the JSON element '{}'", this.getName(), element, e);
         }
     }
 
